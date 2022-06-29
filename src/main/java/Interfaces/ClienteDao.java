@@ -123,7 +123,7 @@ public class ClienteDao {
     public static void main(String[] args) throws ClassNotFoundException, SQLException {
         ClienteDao rp = new ClienteDao();
 
-        rp.agregar(1, "Juan", "Guarnizo", 112233, "Monterrey", "juan@gmail.com", "1995-02-02", 1, 1, "12345");
+        rp.agregar(1, "Juan", "Guarnizo", 112233, "Monterrey", "juan@gmail.com", "1995/02/02", 1, 1, "123456");
         List<Usuarios> lista = rp.listarusuario();
         for (int i = 0; i < lista.size(); i++) {
             System.out.println(lista.get(i).getNombre());

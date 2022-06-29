@@ -1,0 +1,17 @@
+[
+{"type":"header","version":"5.2.0","comment":"Export to JSON plugin for PHPMyAdmin"},
+{"type":"database","name":"evalti"},
+{"type":"table","name":"roles","database":"evalti","data":
+[
+{"rol_id":"1","nombre":"Administrador"},
+{"rol_id":"2","nombre":"Gerente"}
+]
+}
+,{"type":"table","name":"usuarios","database":"evalti","data":
+[
+{"usuario_id":"1","nombre":"Juan","apellido":"Guarnizo","telefono":"1122334455","direccion":"Monterrey, Mexico","correo_electronico":"juan@gmail.com","fecha_nacimiento":"1996-04-08","rol_id":"1","activo":"1","contraseña":"123456"},
+{"usuario_id":"2","nombre":"Ruben","apellido":"Doblas","telefono":"66778899","direccion":"Andorra","correo_electronico":"ruben@gmail.com","fecha_nacimiento":"1990-02-20","rol_id":"1","activo":"1","contraseña":"1234567"},
+{"usuario_id":"3","nombre":"Ibai","apellido":"Llanos","telefono":"7786456","direccion":"España","correo_electronico":"ibai@gmail.com","fecha_nacimiento":"1988-08-04","rol_id":"2","activo":"1","contraseña":"alkdñhav"}
+]
+}
+]

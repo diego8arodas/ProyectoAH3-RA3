@@ -40,7 +40,7 @@ public class ClienteDao {
                 p.setApellido(rs.getString(3));
                 p.setTelefono(rs.getInt(4));
                 p.setDireccion(rs.getString(5));
-                p.setCorreo(rs.getString(6));
+                p.setcorreo_electronico(rs.getString(6));
                 p.setFecha_nacimiento(rs.getString(7));
                 p.setRol_id(rs.getInt(8));
                 p.setActivo(rs.getInt(9));
@@ -56,8 +56,8 @@ public class ClienteDao {
 
     }
 
-    public void modificar(int usuario_id, String nombre, String apellido, int telefono, String direccion, String correo, String fecha_nacimiento, int rol_id, int activo, String contraseña) throws SQLException {
-        String sql = "update usuarios set  nombre=?, apellido=?, telefono=?, direccion=?, correo=?,fecha_nacimiento=?, rol_id=?, activo=?, contraseña=? where usuario_id=?";
+    public void modificar(int usuario_id, String nombre, String apellido, int telefono, String direccion, String correo_electronico, String fecha_nacimiento, int rol_id, int activo, String contraseña) throws SQLException {
+        String sql = "update usuarios set  nombre=?, apellido=?, telefono=?, direccion=?, correo_electronico=?,fecha_nacimiento=?, rol_id=?, activo=?, contraseña=? where usuario_id=?";
         try {
             con = acceso.conectar();
             ps = con.prepareStatement(sql);
@@ -66,7 +66,7 @@ public class ClienteDao {
             ps.setString(2, apellido);
             ps.setInt(3, telefono);
             ps.setString(4, direccion);
-            ps.setString(5, correo);
+            ps.setString(5, correo_electronico);
             ps.setString(6, fecha_nacimiento);
             ps.setInt(7, rol_id);
             ps.setInt(8, activo);
@@ -81,8 +81,8 @@ public class ClienteDao {
 
     }
 
-    public void agregar(int usuario_id, String nombre, String apellido, int telefono, String direccion, String correo, String fecha_nacimiento, int rol_id, int activo, String contraseña) {
-        String sql = "insert into usuarios (usuario_id,nombre,apellido,telefono,direccion,correo,fecha_nacimiento,rol_id,activo,contraseña)values(?,?,?,?,?,?,?,?,?,?)";
+    public void agregar(int usuario_id, String nombre, String apellido, int telefono, String direccion, String correo_electronico, String fecha_nacimiento, int rol_id, int activo, String contraseña) {
+        String sql = "insert into usuarios (usuario_id,nombre,apellido,telefono,direccion,correo_electronico,fecha_nacimiento,rol_id,activo,contraseña)values(?,?,?,?,?,?,?,?,?,?)";
         try {
             con = acceso.conectar();
             ps = con.prepareStatement(sql);
@@ -92,7 +92,7 @@ public class ClienteDao {
             ps.setString(3, apellido);
             ps.setInt(4, telefono);
             ps.setString(5, direccion);
-            ps.setString(6, correo);
+            ps.setString(6, correo_electronico);
             ps.setString(7, fecha_nacimiento);
             ps.setInt(8, rol_id);
             ps.setInt(9, activo);

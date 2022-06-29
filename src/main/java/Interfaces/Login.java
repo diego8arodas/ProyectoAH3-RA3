@@ -108,7 +108,7 @@ public class Login extends JFrame {
         Object[][] object = new Object[y][3];
 
         for (int i = 0; i < lista.size(); i++) {
-            object[i][0] = lista.get(i).getCorreo();
+            object[i][0] = lista.get(i).getcorreo_electronico();
             object[i][1] = lista.get(i).getContraseña();
             object[i][2] = lista.get(i).getNombre();
         }

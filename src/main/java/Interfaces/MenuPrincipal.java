@@ -180,7 +180,7 @@ public class MenuPrincipal extends JFrame {
             usuarios[1] = lista.get(i).getNombre();
             usuarios[2] = lista.get(i).getApellido();
             usuarios[3] = lista.get(i).getRol_id();
-            usuarios[4] = lista.get(i).getCorreo();
+            usuarios[4] = lista.get(i).getcorreo_electronico();
             usuarios[5] = lista.get(i).getTelefono();
             modelo.addRow(usuarios);
         }
@@ -255,7 +255,7 @@ public class MenuPrincipal extends JFrame {
             text1.setText(lista.get(fila).getApellido());
             text2.setText("" + lista.get(fila).getTelefono());
             text3.setText(lista.get(fila).getDireccion());
-            text4.setText(lista.get(fila).getCorreo());
+            text4.setText(lista.get(fila).getcorreo_electronico());
             text4.setText(lista.get(fila).getFecha_nacimiento());
             text5.setText(lista.get(fila).getContraseña());
 

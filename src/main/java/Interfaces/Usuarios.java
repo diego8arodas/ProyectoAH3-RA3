@@ -15,7 +15,7 @@ public class Usuarios {
     private String apellido;
     private int telefono;
     private String direccion;
-    private String correo;
+    private String correo_electronico;
     private String fecha_nacimiento;
     private int rol_id;
     private int activo;
@@ -41,8 +41,8 @@ public class Usuarios {
         this.direccion = direccion;
     }
 
-    public void setCorreo(String correo) {
-        this.correo = correo;
+    public void setcorreo_electronico(String correo_electronico) {
+        this.correo_electronico = correo_electronico;
     }
 
     public void setFecha_nacimiento(String fecha_nacimiento) {
@@ -81,8 +81,8 @@ public class Usuarios {
         return direccion;
     }
 
-    public String getCorreo() {
-        return correo;
+    public String getcorreo_electronico() {
+        return correo_electronico;
     }
 
     public String getFecha_nacimiento() {
